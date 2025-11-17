@@ -1,0 +1,16 @@
+report:
+  output_csv: data/exports/detections.csv
+  output_geojson: data/exports/detections.geojson
+  dedupe_distance_m: 5
+  minimum_confidence: 0.4
+  severity_thresholds:
+    pothole:
+      depth_cm: 5
+    cattle:
+      count: 1
+    garbage:
+      area_m2: 0.2
+  map:
+    enabled: true
+    output_html: reports/detections_map.html
+

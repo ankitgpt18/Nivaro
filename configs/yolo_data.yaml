@@ -1,0 +1,9 @@
+path: data/processed/yolo
+train: train/images
+val: val/images
+test: test/images
+names:
+  0: pothole
+  1: cattle
+  2: garbage
+

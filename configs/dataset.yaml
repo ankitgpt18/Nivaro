@@ -1,0 +1,19 @@
+dataset_root: data/dataset
+processed_root: data/processed/yolo
+classes:
+  pothole: 0
+  cattle: 1
+  garbage: 2
+splits:
+  train: train
+  val: val
+  test: test
+structure:
+  image_subdir: images
+  label_subdir: labels
+expected_format: yolo
+label_format:
+  type: yolo
+  delimiter: ' '
+  min_columns: 5
+

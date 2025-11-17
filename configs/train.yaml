@@ -1,0 +1,31 @@
+training:
+  model: yolov8m.pt
+  epochs: 120
+  imgsz: 1280
+  batch: 8
+  workers: 4
+  patience: 20
+  optimizer: SGD
+  lr0: 0.01
+  lrf: 0.01
+  momentum: 0.937
+  weight_decay: 0.0005
+  warmup_epochs: 3.0
+  warmup_momentum: 0.8
+  warmup_bias_lr: 0.1
+  box: 7.5
+  cls: 0.5
+  dfl: 1.5
+paths:
+  data_config: configs/yolo_data.yaml
+  project_dir: experiments
+  name: yolov8m_baseline
+logging:
+  use_wandb: true
+  entity: null
+  project: nivaro
+  run_name: yolov8m-baseline
+hardware:
+  device: 0
+  deterministic: false
+
